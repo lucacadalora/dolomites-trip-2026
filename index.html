@@ -655,7 +655,7 @@ $('#b15').addEventListener('click',function(){setCamp('c15')});
 $('#b10').addEventListener('click',function(){setCamp('c10')});
 $('#foot').innerHTML=D.foot;
 addEventListener('keydown',function(e){if(e.key==='Escape')closeCard()});
-map.on('load',function(){fitAll()});
+map.on('load',function(){if(curDay<0&&!selSite)fitAll()});
 setCamp(camp,true);
 })();
 </script>
